@@ -1,0 +1,102 @@
+@green_normal : #34A853;
+@green_down : #2a8943;
+//
+@gray_normal:#EDEEF0;
+@gray_down: #cccccc;
+//
+@blue: #337AB7;
+//
+@red_normal:#990000;
+//
+@radius : 2px;
+@heightContoller:30px;
+@textPadding : 15px;
+@border : 4px;
+// OVERALL
+body{
+  height: 1000px;
+  padding-top: 50px !important;
+  margin: 0;
+  padding: 0;
+  background-color: @gray_normal !important;
+}
+button{
+  border-radius: @border !important;
+  border: none !important;
+}
+button:focus{outline:0 !important;}
+a.money{ color: @green_normal;}
+a.tag{
+  color: white;
+  background:@blue;
+  padding: 6px;
+  border-radius: @radius;
+  display: inline-block;
+  margin: 1px;
+}
+input{
+  border:none !important;
+}
+hr{
+  margin: 2px;
+}
+// NAVBAR
+nav.navbar{
+  button{
+    border: 1px solid white;
+    background-color: @green_down !important;
+    span.icon-bar{
+     background-color: white;
+  }}
+  background-color: @green_normal;
+  border-radius:0px;
+  border-bottom: 4px solid @green_down;
+  width: auto;
+  li{padding-right:  5px;}
+  a{color: white !important}
+  a:hover{background-color: @green_down !important;}
+  a.active{background-color: @green_down !important;}
+  a.error{ background-color: @red_normal !important}
+  a:focus{background-color: @green_down !important;}
+}
+//ORDER Pane
+div.ORDER_pane{
+    // background-color: gray;
+    input.form-control{
+    width: 98.7%;
+    }
+    div.ORDER_post{
+      padding: 0 10px 10px 0;
+      // background-color: white
+      div.post{
+        border-bottom: @border solid @gray_down;
+        background-color: white;
+        padding: @textPadding;
+        border-radius: @radius;
+        textarea{
+          resize: none !important;
+        }input{
+          border: 1px solid @gray_down !important;
+        }
+      }
+    }
+}
+
+//SIDEBAR_pane
+div.SIDEBAR_pane{
+  background-color: white;
+  border-bottom: @border solid @gray_down;
+  border-radius: @radius;
+  h1{
+    padding: 5px;
+    padding: 0 !important;
+    marign: 0 !important;
+  }
+  form.form-horizontal{
+    padding: @textPadding !important;
+    input{
+      border: 1px solid @gray_down !important;
+    }
+  }
+
+}
